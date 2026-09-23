@@ -1,0 +1,48 @@
+{
+  "charged": "Pay AED 59.30",
+  "totals": {
+    "total_items": 4,
+    "total_quantity": 4,
+    "offer_applicable_amount": 52.88,
+    "amount": 55.3,
+    "total_mrp": 55.3,
+    "gross_amount": 55.3,
+    "reward_amount": null,
+    "net_amount": 55.3,
+    "net_payable_amount": 55.3,
+    "original_net_amount": 55.3,
+    "original_tax_total": 2.63,
+    "total_amount": 55.3
+  },
+  "tips": null,
+  "items": [
+    {
+      "name": "Dahi ke Kebab",
+      "quantity": 1,
+      "price": 23.8,
+      "total": 23.8,
+      "add_ons": ""
+    },
+    {
+      "name": "Paneer Dum Biryani",
+      "quantity": 1,
+      "price": 27,
+      "total": 27,
+      "add_ons": ""
+    },
+    {
+      "name": "Biryani Salan Dip",
+      "quantity": 1,
+      "price": 1.5,
+      "total": 1.5,
+      "add_ons": ""
+    },
+    {
+      "name": "Special Spiced Dates",
+      "quantity": 1,
+      "price": 3,
+      "total": 3,
+      "add_ons": ""
+    }
+  ]
+}

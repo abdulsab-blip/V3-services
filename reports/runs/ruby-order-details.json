@@ -1,0 +1,111 @@
+{
+  "target": "ruby",
+  "run_at": "2026-09-23T11:08:14.808Z",
+  "order_number": "1001-2046",
+  "invoice_number": "INV_260923_712",
+  "requested": [
+    {
+      "item_id": "10505",
+      "name": "Dahi ke Kebab",
+      "quantity": 1,
+      "unit_price": 23.8,
+      "add_ons": [],
+      "line_total": 23.8
+    },
+    {
+      "item_id": "10503",
+      "name": "Paneer Dum Biryani",
+      "quantity": 1,
+      "unit_price": 27,
+      "add_ons": [
+        {
+          "id": 46878,
+          "name": "Biryani Salan Dip",
+          "price": 1.5,
+          "quantity": 1
+        },
+        {
+          "id": 46879,
+          "name": "Special Spiced Dates",
+          "price": 3,
+          "quantity": 1
+        }
+      ],
+      "line_total": 31.5
+    }
+  ],
+  "requested_total": 55.3,
+  "cart_total_ui": 55.3,
+  "created": [
+    {
+      "name": "Dahi ke Kebab",
+      "quantity": 1,
+      "price_ex_vat": 22.67,
+      "total_ex_vat": 22.67,
+      "add_ons": [],
+      "customization_names": null
+    },
+    {
+      "name": "Paneer Dum Biryani",
+      "quantity": 1,
+      "price_ex_vat": 25.71,
+      "total_ex_vat": 30,
+      "add_ons": [
+        "Biryani Salan Dip",
+        "Special Spiced Dates"
+      ],
+      "customization_names": "Biryani Salan Dip, Special Spiced Dates"
+    }
+  ],
+  "created_total_ex_vat": 52.67,
+  "created_vat": 2.63,
+  "bill": [
+    {
+      "name": "Dahi ke Kebab",
+      "quantity": 1,
+      "price_incl_vat": 23.8,
+      "total_incl_vat": 23.8,
+      "vat": 1.13,
+      "add_ons": ""
+    },
+    {
+      "name": "Paneer Dum Biryani",
+      "quantity": 1,
+      "price_incl_vat": 27,
+      "total_incl_vat": 27,
+      "vat": 1.5,
+      "add_ons": "Biryani Salan Dip, Special Spiced Dates"
+    }
+  ],
+  "bill_totals": {
+    "total_items": 2,
+    "total_quantity": 2,
+    "offer_applicable_amount": 52.67,
+    "amount": 55.3,
+    "total_mrp": 55.3,
+    "gross_amount": 55.3,
+    "reward_amount": null,
+    "net_amount": 55.3,
+    "net_payable_amount": 55.300000000000004,
+    "original_net_amount": 55.3,
+    "original_tax_total": 2.63,
+    "total_amount": 55.3
+  },
+  "tip": 4,
+  "charged_on_telr": 59.3,
+  "success_screen_amount": 59.3,
+  "paid_totals": {
+    "total_items": 2,
+    "total_quantity": 2,
+    "offer_applicable_amount": 50.8,
+    "amount": 50.8,
+    "total_mrp": 50.8,
+    "gross_amount": 50.8,
+    "reward_amount": 0,
+    "net_payable_amount": 59.3,
+    "original_net_amount": 59.3,
+    "original_tax_total": 2.63,
+    "total_amount": 55.3
+  },
+  "paid_tips": 4
+}

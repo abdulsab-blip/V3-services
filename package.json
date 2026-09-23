@@ -1,0 +1,17 @@
+{
+  "name": "dine-in-v3-regression",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Regression suite for the Paytm dine-in QR flow (qr_menu_v3) after the Ruby to Java API migration",
+  "scripts": {
+    "test": "NODE_OPTIONS=--use-system-ca playwright test --project=api --project=e2e",
+    "test:api": "NODE_OPTIONS=--use-system-ca playwright test --project=api",
+    "test:e2e": "NODE_OPTIONS=--use-system-ca playwright test --project=e2e",
+    "test:ruby-baseline": "TARGET=ruby WITH_GUEST=0 NODE_OPTIONS=--use-system-ca playwright test --project=e2e",
+    "report": "playwright show-report",
+    "settle-table": "NODE_OPTIONS=--use-system-ca playwright test --project=tools"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0"
+  }
+}

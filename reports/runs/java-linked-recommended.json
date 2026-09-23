@@ -1,0 +1,79 @@
+{
+  "diagnostic": {
+    "expected_linked": [
+      "7 UP",
+      "Pepsi"
+    ],
+    "expected_recommended": [
+      "Gulab Jamun",
+      "7 UP",
+      "Pepsi"
+    ],
+    "complete_your_meal_shown": true,
+    "linked_shown": [
+      "7 UP",
+      "Pepsi"
+    ],
+    "often_bought_with_shown": true,
+    "recommended_shown": [
+      "Gulab Jamun",
+      "7 UP",
+      "Pepsi"
+    ],
+    "cart_items_expected": [
+      "Onion Samosa",
+      "Aloo & Cheese Samosa (Veg)",
+      "7 UP"
+    ],
+    "bestseller_title": "Bestseller at Kailash Parbat - Pure Veg Restaurant",
+    "bestseller_expected": [
+      "Gulab Jamun",
+      "Double ka meetha",
+      "Pepsi"
+    ],
+    "bestseller_shown": [
+      "Gulab Jamun",
+      "Double ka meetha",
+      "Pepsi"
+    ],
+    "cart_items_shown": [
+      "Onion Samosa",
+      "Aloo & Cheese Samosa (Veg)",
+      "7 UP"
+    ]
+  },
+  "live": {
+    "expected_linked": [
+      "7 UP",
+      "Pepsi"
+    ],
+    "expected_recommended": [
+      "Gulab Jamun",
+      "7 UP",
+      "Pepsi"
+    ],
+    "complete_your_meal_shown": false,
+    "linked_shown": [],
+    "often_bought_with_shown": false,
+    "recommended_shown": [],
+    "cart_items_expected": [
+      "Onion Samosa",
+      "Aloo & Cheese Samosa (Veg)"
+    ],
+    "bestseller_title": "Bestseller at Kailash Parbat - Pure Veg Restaurant",
+    "bestseller_expected": [
+      "Gulab Jamun",
+      "7 UP",
+      "Pepsi"
+    ],
+    "bestseller_shown": [
+      "Gulab Jamun",
+      "7 UP",
+      "Pepsi"
+    ],
+    "cart_items_shown": [
+      "Onion Samosa",
+      "Aloo & Cheese Samosa (Veg)"
+    ]
+  }
+}
