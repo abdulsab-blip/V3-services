@@ -9,9 +9,15 @@
     "test:e2e": "NODE_OPTIONS=--use-system-ca playwright test --project=e2e",
     "test:ruby-baseline": "TARGET=ruby WITH_GUEST=0 NODE_OPTIONS=--use-system-ca playwright test --project=e2e",
     "report": "playwright show-report",
-    "settle-table": "NODE_OPTIONS=--use-system-ca playwright test --project=tools"
+    "settle-table": "NODE_OPTIONS=--use-system-ca playwright test --project=tools",
+    "test:customer": "NODE_OPTIONS=--use-system-ca playwright test --project=mobile-chrome",
+    "typecheck": "tsc --noEmit",
+    "list": "playwright test --list"
   },
   "devDependencies": {
-    "@playwright/test": "^1.63.0"
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.5",
+    "dotenv": "^18.0.9",
+    "typescript": "^7.0.2"
   }
 }
