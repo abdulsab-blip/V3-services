@@ -18,6 +18,31 @@ npm run report              # HTML report with per-step screenshots and api-call
 Requires Google Chrome (the bundled Playwright browser download is blocked by the corporate proxy)
 and the VPN. `NODE_OPTIONS=--use-system-ca` in the scripts lets Node trust the corporate root CA.
 
+## Customer Pay and Order
+
+Customer QR flows (QSR prepaid, dine-in, view and pay bill, takeaway, invalid QR) live in `tests/customer` and run as the `mobile-chrome` project: Pixel 7 profile on installed Chrome. Page objects are `pages/customer`. Dine-in hooks were re-checked against `tests/support/app.ts`. Table preferences are QSR prepaid = 1, Dine-in = 2, View and pay bill = 3, Takeaway = 4.
+
+```bash
+cp .env.example .env          # empty placeholders only; fill locally and do not commit .env
+npm run typecheck
+npm run test:customer         # skips every test whose QR URL or other required env is empty
+npx playwright test --list    # api, e2e, tools, and the customer mobile-chrome tests
+```
+
+Run by tag:
+
+```bash
+npx playwright test --project=mobile-chrome --grep @qsr
+npx playwright test --project=mobile-chrome --grep @dinein
+npx playwright test --project=mobile-chrome --grep @paybill
+npx playwright test --project=mobile-chrome --grep @takeaway
+npx playwright test --project=mobile-chrome --grep @smoke
+npx playwright test --project=mobile-chrome --grep @regression
+npx playwright test --project=mobile-chrome --grep "@smoke.*@qsr|@qsr.*@smoke"
+```
+
+`@qr` selects the invalid/expired QR specs. Manual cases for these modules are in `docs/manual-test-cases.md`. Selector gaps and unverified payment-outcome forcing, QR URLs, and item names are in `docs/customer-dine-in-alignment.md`. `npm test` still runs only the API and dine-in regression projects.
+
 ## What is covered
 
 | Spec | Checks |
